@@ -2,6 +2,18 @@ spring:
   # 应用基础信息，用于注册、日志和监控标识。
   application:
     name: product-center
+  # MySQL 数据源配置，指向本地 product_center 数据库。
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/product_center?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # Redis 缓存配置，使用本地默认端口。
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
 
 server:
   # 后端 HTTP 服务端口。
