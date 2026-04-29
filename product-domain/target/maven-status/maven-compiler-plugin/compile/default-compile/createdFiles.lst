@@ -1,0 +1,14 @@
+com\example\insurance\product\domain\common\BusinessException.class
+com\example\insurance\product\domain\product\ProductType.class
+com\example\insurance\product\domain\common\CodedEnum.class
+com\example\insurance\product\domain\publish\PublishValidationIssue.class
+com\example\insurance\product\domain\publish\ProductPublishCandidate.class
+com\example\insurance\product\domain\product\ProductStateMachine.class
+com\example\insurance\product\domain\product\ProductVersionStateMachine.class
+com\example\insurance\product\domain\publish\PublishValidationResult.class
+com\example\insurance\product\domain\product\ProductNature.class
+com\example\insurance\product\domain\rate\RateTableStatus.class
+com\example\insurance\product\domain\publish\PublishValidationService.class
+com\example\insurance\product\domain\product\ProductStatus.class
+com\example\insurance\product\domain\product\ProductVersionStatus.class
+com\example\insurance\product\domain\approval\ApprovalTaskStatus.class

@@ -1,0 +1,4 @@
+com\example\insurance\product\api\ProductCenterApplication.class
+com\example\insurance\product\api\product\ProductListItemResponse.class
+com\example\insurance\product\api\product\ProductAdminController.class
+com\example\insurance\product\api\common\ApiResponse.class

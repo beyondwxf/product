@@ -1,0 +1,8 @@
+spring:
+  # 应用基础信息，用于注册、日志和监控标识。
+  application:
+    name: product-center
+
+server:
+  # 后端 HTTP 服务端口。
+  port: 8080

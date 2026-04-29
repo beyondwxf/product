@@ -1,0 +1,117 @@
+:root {
+  /* 管理后台全局字体与基础配色。 */
+  font-family: Inter, "Microsoft YaHei", Arial, sans-serif;
+  color: #1f2937;
+  background: #f5f7fb;
+}
+
+body {
+  /* 移除浏览器默认外边距，保证后台布局贴合视口。 */
+  margin: 0;
+}
+
+button,
+input,
+select {
+  /* 表单控件继承全局字体，避免中英文混排不一致。 */
+  font: inherit;
+}
+
+.app-shell {
+  /* 后台主布局：左侧导航，右侧业务内容。 */
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  /* 左侧业务导航区域。 */
+  background: #152238;
+  color: #fff;
+  padding: 20px 14px;
+}
+
+.brand {
+  /* 系统名称展示。 */
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.sidebar a {
+  display: block;
+  color: #dbeafe;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+.sidebar a.router-link-active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.content {
+  /* 右侧路由内容区域。 */
+  padding: 24px;
+}
+
+.page {
+  /* 页面内容最大宽度，保证大屏可读性。 */
+  max-width: 1280px;
+}
+
+.page-header {
+  /* 页面标题和主操作按钮布局。 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.page-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+.toolbar {
+  /* 列表筛选工具栏。 */
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.toolbar input,
+.toolbar select {
+  height: 36px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: #fff;
+}
+
+.data-table {
+  /* 通用数据表格。 */
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.data-table th {
+  background: #f9fafb;
+  font-weight: 600;
+}
