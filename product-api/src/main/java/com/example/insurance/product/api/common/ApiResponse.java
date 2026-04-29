@@ -20,4 +20,16 @@ public record ApiResponse<T>(String code, String message, String traceId, T data
     public static <T> ApiResponse<T> success(T data) {
         return new ApiResponse<>("SUCCESS", "成功", null, data);
     }
+
+    /**
+     * 创建失败响应。
+     *
+     * @param code 错误编码
+     * @param message 错误消息
+     * @param <T> 响应数据类型
+     * @return 失败响应
+     */
+    public static <T> ApiResponse<T> failure(String code, String message) {
+        return new ApiResponse<>(code, message, null, null);
+    }
 }

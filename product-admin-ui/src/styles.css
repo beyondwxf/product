@@ -1,38 +1,46 @@
 :root {
-  /* 管理后台全局字体与基础配色。 */
   font-family: Inter, "Microsoft YaHei", Arial, sans-serif;
   color: #1f2937;
   background: #f5f7fb;
 }
 
 body {
-  /* 移除浏览器默认外边距，保证后台布局贴合视口。 */
   margin: 0;
 }
 
 button,
 input,
 select {
-  /* 表单控件继承全局字体，避免中英文混排不一致。 */
   font: inherit;
 }
 
+button {
+  min-height: 36px;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  padding: 0 12px;
+  color: #fff;
+  background: #2563eb;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
 .app-shell {
-  /* 后台主布局：左侧导航，右侧业务内容。 */
   display: grid;
   grid-template-columns: 220px 1fr;
   min-height: 100vh;
 }
 
 .sidebar {
-  /* 左侧业务导航区域。 */
   background: #152238;
   color: #fff;
   padding: 20px 14px;
 }
 
 .brand {
-  /* 系统名称展示。 */
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 22px;
@@ -53,17 +61,14 @@ select {
 }
 
 .content {
-  /* 右侧路由内容区域。 */
   padding: 24px;
 }
 
 .page {
-  /* 页面内容最大宽度，保证大屏可读性。 */
   max-width: 1280px;
 }
 
 .page-header {
-  /* 页面标题和主操作按钮布局。 */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,15 +85,29 @@ select {
   color: #6b7280;
 }
 
+.create-panel {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr)) auto;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
 .toolbar {
-  /* 列表筛选工具栏。 */
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 14px;
 }
 
+.create-panel input,
+.create-panel select,
 .toolbar input,
 .toolbar select {
+  min-width: 0;
   height: 36px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
@@ -96,8 +115,13 @@ select {
   background: #fff;
 }
 
+.notice {
+  margin: 0 0 12px;
+  color: #166534;
+  font-weight: 600;
+}
+
 .data-table {
-  /* 通用数据表格。 */
   width: 100%;
   border-collapse: collapse;
   background: #fff;
@@ -114,4 +138,51 @@ select {
 .data-table th {
   background: #f9fafb;
   font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.table-footer {
+  margin-top: 12px;
+  color: #6b7280;
+}
+
+.validation-panel {
+  margin-top: 16px;
+  padding: 16px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+}
+
+.validation-panel h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.validation-panel ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.validation-panel li {
+  margin: 6px 0;
+}
+
+.validation-panel strong {
+  margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .create-panel {
+    grid-template-columns: 1fr;
+  }
 }

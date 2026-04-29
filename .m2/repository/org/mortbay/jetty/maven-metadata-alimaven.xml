@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <plugins>
+    <plugin>
+      <prefix>h2spec</prefix>
+      <artifactId>h2spec-maven-plugin</artifactId>
+      <name>h2spec-maven-plugin Maven Mojo</name>
+    </plugin>
+    <plugin>
+      <prefix>jetty</prefix>
+      <artifactId>jetty-maven-plugin</artifactId>
+      <name>Jetty :: Jetty Maven Plugin</name>
+    </plugin>
+    <plugin>
+      <prefix>jetty</prefix>
+      <artifactId>maven-jetty-plugin</artifactId>
+      <name>Maven Jetty Plugin</name>
+    </plugin>
+    <plugin>
+      <prefix>jetty-jspc</prefix>
+      <artifactId>jetty-jspc-maven-plugin</artifactId>
+      <name>Jetty :: Jetty JSPC Maven Plugin</name>
+    </plugin>
+    <plugin>
+      <prefix>jetty-jspc</prefix>
+      <artifactId>maven-jetty-jspc-plugin</artifactId>
+      <name>Maven Jetty JSPC Plugin</name>
+    </plugin>
+    <plugin>
+      <prefix>jetty6</prefix>
+      <artifactId>maven-jetty6-plugin</artifactId>
+      <name>Maven Jetty6 Plugin</name>
+    </plugin>
+    <plugin>
+      <prefix>jettyjspc</prefix>
+      <artifactId>jetty-maven-jspc-plugin</artifactId>
+      <name>Jetty Extra :: Maven JSPC Plugin</name>
+    </plugin>
+    <plugin>
+      <prefix>tck-extract-tests</prefix>
+      <artifactId>tck-extract-tests-maven-plugin</artifactId>
+      <name>tck-extract-tests-maven-plugin Maven Plugin</name>
+    </plugin>
+  </plugins>
+</metadata>

@@ -1,0 +1,5 @@
+com\example\insurance\product\infrastructure\repository\InMemoryProductRepository$SnapshotRow.class
+com\example\insurance\product\infrastructure\config\ProductApplicationBeanConfiguration.class
+com\example\insurance\product\infrastructure\repository\InMemoryProductRepository$ProductRow.class
+com\example\insurance\product\infrastructure\repository\InMemoryProductRepository$VersionRow.class
+com\example\insurance\product\infrastructure\repository\InMemoryProductRepository.class

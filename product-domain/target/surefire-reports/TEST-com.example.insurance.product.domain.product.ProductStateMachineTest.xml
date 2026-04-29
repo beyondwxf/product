@@ -1,64 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.insurance.product.domain.product.ProductStateMachineTest" time="0.036" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.insurance.product.domain.product.ProductStateMachineTest" time="0.045" tests="2" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="25"/>
+    <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="C:\dev\code\ai_code\codex1\product-domain\target\test-classes;C:\dev\code\ai_code\codex1\product-domain\target\classes;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;C:\dev\MavenRepository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\dev\MavenRepository\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;C:\dev\MavenRepository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;C:\dev\MavenRepository\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\develop\aicode\product\product-domain\target\test-classes;D:\develop\aicode\product\product-domain\target\classes;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;D:\develop\aicode\product\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\develop\aicode\product\.m2\repository\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;D:\develop\aicode\product\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;D:\develop\aicode\product\.m2\repository\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
-    <property name="user.timezone" value="GMT+08:00"/>
-    <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="25"/>
+    <property name="java.vendor.url" value="https://access.redhat.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CN"/>
-    <property name="sun.boot.library.path" value="C:\dev\jdk\bit64\jdk-25.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\51021\AppData\Local\Temp\surefire8686064547508264172\surefirebooter-20260429180732237_3.jar C:\Users\51021\AppData\Local\Temp\surefire8686064547508264172 2026-04-29T18-07-32_146-jvmRun1 surefire-20260429180732237_1tmp surefire_0-20260429180732237_2tmp"/>
+    <property name="sun.boot.library.path" value="D:\sofeInstall\jdk\openjdk-17.0.7.0.7-1.win.x86_64\bin"/>
+    <property name="sun.java.command" value="C:\Users\01\AppData\Local\Temp\surefire6496076670727534847\surefirebooter-20260429221602095_3.jar C:\Users\01\AppData\Local\Temp\surefire6496076670727534847 2026-04-29T22-16-01_957-jvmRun1 surefire-20260429221602095_1tmp surefire_0-20260429221602095_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\dev\code\ai_code\codex1\product-domain\target\test-classes;C:\dev\code\ai_code\codex1\product-domain\target\classes;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;C:\dev\MavenRepository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\dev\MavenRepository\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;C:\dev\MavenRepository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;C:\dev\MavenRepository\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;C:\dev\MavenRepository\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;"/>
+    <property name="surefire.test.class.path" value="D:\develop\aicode\product\product-domain\target\test-classes;D:\develop\aicode\product\product-domain\target\classes;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;D:\develop\aicode\product\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\develop\aicode\product\.m2\repository\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;D:\develop\aicode\product\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;D:\develop\aicode\product\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;D:\develop\aicode\product\.m2\repository\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\51021"/>
+    <property name="user.home" value="C:\Users\01"/>
     <property name="user.language" value="zh"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-10-21"/>
-    <property name="java.home" value="C:\dev\jdk\bit64\jdk-25.0.1"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="D:\sofeInstall\jdk\openjdk-17.0.7.0.7-1.win.x86_64"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\dev\code\ai_code\codex1\product-domain"/>
+    <property name="basedir" value="D:\develop\aicode\product\product-domain"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\51021\AppData\Local\Temp\surefire8686064547508264172\surefirebooter-20260429180732237_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\01\AppData\Local\Temp\surefire6496076670727534847\surefirebooter-20260429221602095_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="25.0.1+8-LTS-27"/>
-    <property name="user.name" value="51021"/>
-    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="java.runtime.version" value="17.0.7+7-LTS"/>
+    <property name="user.name" value="01"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\dev\MavenRepository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\51021\AppData\Local\Temp\"/>
-    <property name="java.version" value="25.0.1"/>
-    <property name="user.dir" value="C:\dev\code\ai_code\codex1\product-domain"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="(Red_Hat-17.0.7.0+7-1)"/>
+    <property name="localRepository" value="D:\develop\aicode\product\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi"/>
+    <property name="java.io.tmpdir" value="C:\Users\01\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="D:\develop\aicode\product\product-domain"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="C:\dev\jdk\bit64\jdk-25.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\51021\.codex\tmp\arg0\codex-arg067cO8A;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Program Files (x86)\pcsuite\;c:\dev\nvm;C:\dev\nodejs;C:\dev\jdk\bit64\jdk-25.0.1\bin;C:\Program Files\TortoiseGit\bin;C:\dev\dameng_odbc_win\bin;C:\dev\dameng_odbc_win;C:\Program Files\Git\cmd;C:\dev\maven\apache-maven-3.9.2\bin;C:\Program Files\Qoder\bin;C:\Users\51021\AppData\Local\Microsoft\WindowsApps;C:\Users\51021\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\51021\AppData\Local\Python\bin;C:\dev\codebuddy\CodeBuddy CN\bin;C:\Users\51021\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\51021\AppData\Local\OpenAI\Codex\bin;C:\Program Files\WindowsApps\OpenAI.Codex_26.422.8496.0_x64__2p2nqsd0c76g0\app\resources;."/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\sofeInstall\jdk\openjdk-17.0.7.0.7-1.win.x86_64\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\sofeInstall\jdk\openjdk-17.0.7.0.7-1.win.x86_64\bin;C:\Users\01\.codex\tmp\arg0\codex-arg0uinuPi;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\sofeInstall\xmanager7\Xmanager 7\;D:\sofeInstall\xmanager7\Xshell 7\;D:\sofeInstall\xmanager7\Xftp 7\;D:\sofeInstall\xmanager7\Xlpd 7\;D:\sofeInstall\nvm\nvm;C:\Program Files\nodejs;D:\sofeInstall\nvm\nvmnode\nodejs;D:\Program Files (x86)\pcsuite\;D:\sofeInstall\mysql-5.7.28-winx64\bin;D:\sofeInstall\redis\;D:\sofeInstall\nvm\nvm;C:\Program Files\nodejs;D:\sofeInstall\jdk\jdk-11.0.1_windows-x64_bin\bin;C:\Program Files\Git\cmd;C:\Program Files\Qoder\bin;D:\sofeInstall\maven\apache-maven-3.9.2\bin;C:\Users\01\AppData\Local\Microsoft\WindowsApps;C:\Users\01\AppData\Local\JetBrains\Toolbox\scripts;D:\sofeInstall\nvm\nvm;C:\Program Files\CodeBuddy CN\bin;C:\Users\01\AppData\Local\OpenAI\Codex\bin;C:\Program Files\WindowsApps\OpenAI.Codex_26.422.8496.0_x64__2p2nqsd0c76g0\app\resources;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.0.1+8-LTS-27"/>
-    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="java.vm.version" value="17.0.7+7-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="69.0"/>
+    <property name="maven.repo.local" value="D:\develop\aicode\product\.m2\repository"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldRejectDirectDraftPublish" classname="com.example.insurance.product.domain.product.ProductStateMachineTest" time="0.018"/>
-  <testcase name="shouldAllowDraftSubmitReview" classname="com.example.insurance.product.domain.product.ProductStateMachineTest" time="0.002"/>
+  <testcase name="shouldRejectDirectDraftPublish" classname="com.example.insurance.product.domain.product.ProductStateMachineTest" time="0.023"/>
+  <testcase name="shouldAllowDraftSubmitReview" classname="com.example.insurance.product.domain.product.ProductStateMachineTest" time="0.003"/>
 </testsuite>

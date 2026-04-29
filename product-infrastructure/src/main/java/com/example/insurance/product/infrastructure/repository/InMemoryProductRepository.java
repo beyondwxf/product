@@ -51,6 +51,10 @@ public class InMemoryProductRepository implements ProductCatalogRepository,
      */
     private final AtomicLong versionIdSequence = new AtomicLong(2000);
     /**
+     * 发布快照 ID 序列。
+     */
+    private final AtomicLong snapshotIdSequence = new AtomicLong(3000);
+    /**
      * 产品主档内存表。
      */
     private final Map<Long, ProductRow> products = new LinkedHashMap<>();
@@ -285,7 +289,7 @@ public class InMemoryProductRepository implements ProductCatalogRepository,
         ).trim();
         snapshots.put(snapshotKey(product.productCode(), version.versionNo()),
                 new SnapshotRow(product.productCode(), version.versionNo(), snapshotJson, true));
-        return new PublishSnapshot(product.productCode(), version.versionNo());
+        return new PublishSnapshot(snapshotIdSequence.incrementAndGet(), product.productCode(), version.versionNo());
     }
 
     /**
@@ -327,6 +331,16 @@ public class InMemoryProductRepository implements ProductCatalogRepository,
     }
 
     /**
+     * 删除当前产品缓存。
+     *
+     * @param productCode 产品编码
+     */
+    @Override
+    public void evictCurrentProduct(String productCode) {
+        // 内存实现无需删除外部缓存。
+    }
+
+    /**
      * 发布产品激活事件。
      *
      * @param productCode 产品编码
@@ -334,6 +348,17 @@ public class InMemoryProductRepository implements ProductCatalogRepository,
      */
     @Override
     public void publishProductActivated(String productCode, String versionNo) {
+        // 内存实现无需发送外部事件。
+    }
+
+    /**
+     * 发布产品下架事件。
+     *
+     * @param productCode 产品编码
+     * @param versionNo 版本号
+     */
+    @Override
+    public void publishProductSuspended(String productCode, String versionNo) {
         // 内存实现无需发送外部事件。
     }
 
