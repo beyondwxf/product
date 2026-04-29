@@ -1,0 +1,27 @@
+package com.example.insurance.product.api.product;
+
+import jakarta.validation.constraints.NotBlank;
+
+/**
+ * 保存保险责任请求。
+ *
+ * @param liabilityCode 责任编码
+ * @param liabilityName 责任名称
+ * @param liabilityType 责任类型
+ * @param claimType 理赔类型
+ * @param amountRule 保额规则 JSON
+ * @param waitingDays 等待期天数
+ * @param exemptionDesc 免责说明
+ * @param paymentCondition 给付条件
+ */
+public record SaveLiabilityRequest(
+        @NotBlank String liabilityCode,
+        @NotBlank String liabilityName,
+        String liabilityType,
+        String claimType,
+        String amountRule,
+        Integer waitingDays,
+        String exemptionDesc,
+        String paymentCondition
+) {
+}

@@ -1,7 +1,10 @@
 package com.example.insurance.product.api.product;
 
+import com.example.insurance.product.application.product.ClauseDocumentRefDetail;
+import com.example.insurance.product.application.product.LiabilityDetail;
 import com.example.insurance.product.application.product.ProductDetail;
 import com.example.insurance.product.application.product.ProductListItem;
+import com.example.insurance.product.application.product.RiskItemDetail;
 
 /**
  * 产品接口模型转换器。
@@ -56,6 +59,64 @@ final class ProductMapper {
                 detail.versionStatus().code(),
                 detail.updatedAt(),
                 detail.updatedBy()
+        );
+    }
+
+    /**
+     * 转换险种响应。
+     *
+     * @param detail 险种详情
+     * @return 险种响应
+     */
+    static RiskItemResponse toRiskResponse(RiskItemDetail detail) {
+        return new RiskItemResponse(
+                detail.id(),
+                detail.versionId(),
+                detail.riskCode(),
+                detail.riskName(),
+                detail.riskType(),
+                detail.coverageAmountType(),
+                detail.premiumCalcType(),
+                detail.sortNo()
+        );
+    }
+
+    /**
+     * 转换责任响应。
+     *
+     * @param detail 责任详情
+     * @return 责任响应
+     */
+    static LiabilityResponse toLiabilityResponse(LiabilityDetail detail) {
+        return new LiabilityResponse(
+                detail.id(),
+                detail.versionId(),
+                detail.riskId(),
+                detail.liabilityCode(),
+                detail.liabilityName(),
+                detail.liabilityType(),
+                detail.claimType(),
+                detail.amountRule(),
+                detail.waitingDays(),
+                detail.exemptionDesc(),
+                detail.paymentCondition()
+        );
+    }
+
+    /**
+     * 转换条款引用响应。
+     *
+     * @param detail 条款引用详情
+     * @return 条款引用响应
+     */
+    static ClauseDocumentRefResponse toClauseResponse(ClauseDocumentRefDetail detail) {
+        return new ClauseDocumentRefResponse(
+                detail.id(),
+                detail.versionId(),
+                detail.documentType(),
+                detail.documentId(),
+                detail.documentVersion(),
+                detail.previewUrl()
         );
     }
 }

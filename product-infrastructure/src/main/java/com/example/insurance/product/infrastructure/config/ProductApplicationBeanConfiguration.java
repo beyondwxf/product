@@ -10,6 +10,7 @@ import com.example.insurance.product.application.publish.ProductPublishApplicati
 import com.example.insurance.product.application.publish.ProductVersionRepository;
 import com.example.insurance.product.application.publish.PublishSnapshotRepository;
 import com.example.insurance.product.domain.publish.PublishValidationService;
+import com.example.insurance.product.infrastructure.repository.InMemoryProductRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,6 +19,16 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class ProductApplicationBeanConfiguration {
+    /**
+     * 创建内存产品仓储，作为本地联调和首批闭环的默认仓储实现。
+     *
+     * @return 内存产品仓储
+     */
+    @Bean
+    public InMemoryProductRepository inMemoryProductRepository() {
+        return new InMemoryProductRepository();
+    }
+
     /**
      * 创建发布完整性校验领域服务。
      *

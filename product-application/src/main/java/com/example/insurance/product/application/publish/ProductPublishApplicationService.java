@@ -6,10 +6,12 @@ import com.example.insurance.product.domain.product.ProductVersionStatus;
 import com.example.insurance.product.domain.publish.ProductPublishCandidate;
 import com.example.insurance.product.domain.publish.PublishValidationResult;
 import com.example.insurance.product.domain.publish.PublishValidationService;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 产品发布应用服务，负责发布用例编排和事务边界承载。
  */
+@Transactional
 public class ProductPublishApplicationService {
     /**
      * 产品版本仓储端口，用于读取发布候选信息和切换版本状态。
